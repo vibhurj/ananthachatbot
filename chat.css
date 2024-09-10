@@ -409,7 +409,7 @@ color: rgb(13, 145, 22);
         .snake{
             margin-left: 0;
            filter: brightness(130%);
-           filter: saturate(350%);
+           filter: saturate(400%);
            animation-name:snake;
 animation-duration:4s;
 animation-iteration-count:infinite;
@@ -420,12 +420,12 @@ animation-timing-function: linear;
                 margin-left: -110px;
             }
             100%{
-                margin-left: 120px;
+                margin-left: 140px;
             }
         }
 
         @media only screen and (max-width: 600px) {
             #chat-messages {
-                height: 250px
+                height: 250px;
             }
           }
