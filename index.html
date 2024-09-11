@@ -10,54 +10,58 @@
     <link rel="stylesheet" href="chat.css" type="text/css">
     <title>ChatBot</title>
     <script>
-        function btnclick(){
+        function btnclick()
+        {
             
             if (document.getElementById('maincon').classList.contains('main'))
-        {
+            {
             document.getElementById('maincon').classList.remove('main')
             document.getElementById('maincon').classList.add('main2')
-        }
-        else
-        {
+             }
+             else
+            {
             
             document.getElementById('maincon').classList.add('main')
             document.getElementById('maincon').classList.remove('main2')
-        }
-    }
-        function book(){
-            if (document.getElementById('bk').classList.contains('book')) 
+            }
+         }
+        function book()
         {
+            if (document.getElementById('bk').classList.contains('book')) 
+            {
             document.getElementById('bk').classList.remove('book')
             document.getElementById('bk').classList.add('book2')
             document.getElementById('im').classList.remove('imgs2')
             document.getElementById('im').classList.add('imgs')
-        }
-        else
-        {
+            }
+            else
+            {
             document.getElementById('bk').classList.add('book')
             document.getElementById('bk').classList.remove('book2')
             document.getElementById('im').classList.remove('imgs2')
             document.getElementById('im').classList.add('imgs')
-        }
+         }
         }
 
-        function img(){
-            if (document.getElementById('im').classList.contains('imgs')) 
+        function img()
         {
+            if (document.getElementById('im').classList.contains('imgs')) 
+             {
             document.getElementById('im').classList.remove('imgs')
             document.getElementById('im').classList.add('imgs2')
             document.getElementById('bk').classList.remove('book2')
             document.getElementById('bk').classList.add('book')
-        }
-        else
-        {
+            }
+            else
+            {
             document.getElementById('im').classList.add('imgs')
             document.getElementById('im').classList.remove('imgs2')
             document.getElementById('bk').classList.remove('book2')
             document.getElementById('bk').classList.add('book')
+             }
         }
-        }
-        function micbtn(){
+        function micbtn()
+        {
             var a=document.getElementById('message').value;
                 if (a!="")
                 {
@@ -84,38 +88,84 @@
                             <div class="head">
                             <h3><span>Anantha, </span></h3>
                             <br>
-                            <h4>Welcome ! </h4>
+                            <h4>Welcome !</h4>
                             </div>
-                            
                                 <div class="logo">
                                 <img src="Images/ananthalogo2.png" height="80" alt="">
                                 <label for="hint-click">
                                     <input type="checkbox" id="hint-click" style="display: none;">
                                     <div class="hint">
                                       <span class="ispan" style="color: white;"><i class="bi bi-info"></i></span>
-                                      <p>This is designed by a 4 year old little girl</p>
+                                      <p>This is designed by a 4 year old girl</p>
                                     </div>
                                   </label>
                                 </div>
-
-                            
                         </div>
                     </div>
                     <div class="container">
-                        <div class="qklinks px-3">
+                        <div class="qklinks px-0">
                                     <h6 class="pb-2 ps-2">Quick Links</h6>
-                                    <div class="bts pb-3">
-                                        <button type="button" class="btns" onclick="book()">Helpline</button>
-                                        <button type="button" class="btns " onclick="img()">Snake Recognition</button>
-                                        <button type="button" class="btns" onclick="img()">First Aid</button>
-                                        <button type="button" class="btns">Hospitals</button>
-                                        <button type="button" class="btns">Dr Live</button>
-                                        <button type="button" class="btns">Snake Rescuers</button>
-                                        <button type="button" class="btns">Venom Details</button>
-                                    </div>
+                                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators d-none">
+                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" > 
+                                        </button>
+                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"> 
+                                        </button>
+                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"> 
+                                        </button>
+                                        </div>
+                                        <div class="carousel-inner px-5">
+                                        <div class="carousel-item active" data-bs-target="#demo">
+                                            <div class="bts py-3">
+                                                <button type="button" class="btns" onclick="book()">Helpline</button>
+                                                <button type="button" class="btns " onclick="img()">Snake Recognition</button>
+                                                <button type="button" class="btns" onclick="img()">First Aid</button>
+                                                <button type="button" class="btns">Hospitals</button>
+                                                <button type="button" class="btns">Dr Live</button>
+                                                <button type="button" class="btns">Snake Rescuers</button>
+                                                <button type="button" class="btns">Venom Details</button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="carousel-item " data-bs-target="#demo">
+                                            <div class="bts py-3">
+                                                <button type="button" class="btns" onclick="book()">Helpline</button>
+                                                <button type="button" class="btns " onclick="img()">Snake Recognition</button>
+                                                <button type="button" class="btns" onclick="img()">First Aid</button>
+                                                <button type="button" class="btns">Hospitals</button>
+                                                <button type="button" class="btns">Dr Live</button>
+                                                <button type="button" class="btns">Snake Rescuers</button>
+                                                <button type="button" class="btns">Venom Details</button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="carousel-item" data-bs-target="#demo">
+                                            <div class="bts py-3">
+                                                <button type="button" class="btns" onclick="book()">Helpline</button>
+                                                <button type="button" class="btns " onclick="img()">Snake Recognition</button>
+                                                <button type="button" class="btns" onclick="img()">First Aid</button>
+                                                <button type="button" class="btns">Hospitals</button>
+                                                <button type="button" class="btns">Dr Live</button>
+                                                <button type="button" class="btns">Snake Rescuers</button>
+                                                <button type="button" class="btns">Venom Details</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                        <button class="carousel-control-prev pe-5" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                                              </svg>
+                                        </button>
+                                        
+                                        <button class="carousel-control-next ps-5" type="button" data-bs-target="#demo" data-bs-slide="next">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                              </svg>
+                                        </button>
+                                        </div>
                         </div>
                     </div>
-
                     <div class="container">
                         <div class="qklinkcon px-3">
                                     <div class="book d-flex justify-content-between p-2 px-2" id="bk">
@@ -126,7 +176,6 @@
                                         </svg>Search</button>
                                         </div>
                                     </div>
-
                                     <div class="imgs d-flex justify-content-between p-2 px-2" id="im">
                                         <div class=" row imghide" id="hdimg">
                                             <div class="col-12 ">
@@ -137,15 +186,11 @@
                                             </div>
                                         </div>
                                     </div>
-
                         </div>
                     </div>
-
-
                     <div class="container">
                         <div class="chatbot">
                             <div id="chat-widget">
-                        
                                 <div id="chat-messages">
                                     <div class="message bot-message">
                                         <p class="mb-0 p-1">Welcome! How may I help you?</p>
@@ -192,7 +237,6 @@
                                       </svg></button>
                                 </form>
                                     <button id="send-button" class="sndbtn" onclick="sendMessage()"><i class="bi bi-mic-fill" id="mic"></i></button>
-                                      
                                 </div>
                             </div>
 
