@@ -30,6 +30,7 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
+    z-index: 100;
     transform: translate(-50%,-50%);
     max-width: 900px;
     max-height: 670px;
@@ -69,6 +70,7 @@ body{
     color: rgb(17, 161, 17);
     transition: all 0.12s linear;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.141);
+    z-index: 1;
 }
 
 .chat-button:before {
