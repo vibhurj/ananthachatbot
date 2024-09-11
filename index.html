@@ -25,41 +25,7 @@
             document.getElementById('maincon').classList.remove('main2')
             }
          }
-        function book()
-        {
-            if (document.getElementById('bk').classList.contains('book')) 
-            {
-            document.getElementById('bk').classList.remove('book')
-            document.getElementById('bk').classList.add('book2')
-            document.getElementById('im').classList.remove('imgs2')
-            document.getElementById('im').classList.add('imgs')
-            }
-            else
-            {
-            document.getElementById('bk').classList.add('book')
-            document.getElementById('bk').classList.remove('book2')
-            document.getElementById('im').classList.remove('imgs2')
-            document.getElementById('im').classList.add('imgs')
-         }
-        }
-
-        function img()
-        {
-            if (document.getElementById('im').classList.contains('imgs')) 
-             {
-            document.getElementById('im').classList.remove('imgs')
-            document.getElementById('im').classList.add('imgs2')
-            document.getElementById('bk').classList.remove('book2')
-            document.getElementById('bk').classList.add('book')
-            }
-            else
-            {
-            document.getElementById('im').classList.add('imgs')
-            document.getElementById('im').classList.remove('imgs2')
-            document.getElementById('bk').classList.remove('book2')
-            document.getElementById('bk').classList.add('book')
-             }
-        }
+        
         function micbtn()
         {
             var a=document.getElementById('message').value;
@@ -86,9 +52,7 @@
                     <div class="row row1 p-0 m-0">
                         <div class="col-lg-12 d-flex justify-content-between p-4 px-5">
                             <div class="head">
-                            <h3><span>Anantha, </span></h3>
-                            <br>
-                            <h4>Welcome !</h4>
+                            <h3 class="pt-3"><span>Anantha</span></h3>
                             </div>
                                 <div class="logo">
                                 <img src="Images/ananthalogo2.png" height="80" alt="">
@@ -102,68 +66,27 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="container pb-5">
                         <div class="qklinks px-0">
                                     <h6 class="pb-2 ps-2">Quick Links</h6>
-                                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="demo" class="carousel slide cr1" data-bs-ride="false">
                                         <div class="carousel-indicators d-none">
                                         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" > 
                                         </button>
-                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"> 
-                                        </button>
-                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"> 
-                                        </button>
+                                        
                                         </div>
                                         <div class="carousel-inner px-5">
                                         <div class="carousel-item active" data-bs-target="#demo">
-                                            <div class="bts py-3">
-                                                <button type="button" class="btns" onclick="book()">Helpline</button>
-                                                <button type="button" class="btns " onclick="img()">Snake Recognition</button>
-                                                <button type="button" class="btns" onclick="img()">First Aid</button>
+                                            <div class="bts py-2">
+                                                <button type="button" class="btns">Helpline</button>
+                                                <button type="button" class="btns">Snake Recognition</button>
+                                                <button type="button" class="btns">First Aid</button>
                                                 <button type="button" class="btns">Hospitals</button>
                                                 <button type="button" class="btns">Dr Live</button>
                                                 <button type="button" class="btns">Snake Rescuers</button>
                                                 <button type="button" class="btns">Venom Details</button>
                                             </div>
-                                            <div class="btsm py-3">
-                                                <button type="button" class="btnsm" onclick="book()">Helpline</button>
-                                                <button type="button" class="btnsm">Hospitals</button>
-                                                <button type="button" class="btnsm" onclick="img()">First Aid</button>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="carousel-item " data-bs-target="#demo">
-                                            <div class="bts py-3">
-                                                <button type="button" class="btns" onclick="book()">Helpline</button>
-                                                <button type="button" class="btns " onclick="img()">Snake Recognition</button>
-                                                <button type="button" class="btns" onclick="img()">First Aid</button>
-                                                <button type="button" class="btns">Hospitals</button>
-                                                <button type="button" class="btns">Dr Live</button>
-                                                <button type="button" class="btns">Snake Rescuers</button>
-                                                <button type="button" class="btns">Venom Details</button>
-                                            </div>
-                                            <div class="btsm py-3">
-                                                
-                                                <button type="button" class="btnsm">Dr Live</button>
-                                                <button type="button" class="btnsm " onclick="img()">Snake Recognition</button>
-                                                
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="carousel-item" data-bs-target="#demo">
-                                            <div class="bts py-3">
-                                                <button type="button" class="btns" onclick="book()">Helpline</button>
-                                                <button type="button" class="btns " onclick="img()">Snake Recognition</button>
-                                                <button type="button" class="btns" onclick="img()">First Aid</button>
-                                                <button type="button" class="btns">Hospitals</button>
-                                                <button type="button" class="btns">Dr Live</button>
-                                                <button type="button" class="btns">Snake Rescuers</button>
-                                                <button type="button" class="btns">Venom Details</button>
-                                            </div>
-                                            <div class="btsm py-3">
-                                                <button type="button" class="btnsm">Venom Details</button>
-                                                <button type="button" class="btnsm">Snake Rescuers</button>
-                                            </div>
+                                    
                                         </div>
                                         </div>
                                         
@@ -179,28 +102,56 @@
                                               </svg>
                                         </button>
                                         </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="qklinkcon px-3">
-                                    <div class="book d-flex justify-content-between p-2 px-2" id="bk">
-                                     <div class="bkhide" id="hdbook">
-                                        <input type="text" placeholder="Search here..." class="w-100 mx-2 ps-3">
-                                        <button type="button" class="srchbtn py-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mx-2" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                        </svg>Search</button>
-                                        </div>
-                                    </div>
-                                    <div class="imgs d-flex justify-content-between p-2 px-2" id="im">
-                                        <div class=" row imghide" id="hdimg">
-                                            <div class="col-12 ">
-                                                <form action="/action_page.php">
-                                                    <input type="file" id="myFile" name="filename">
-                                                    <button type="button" class="px-2 py-1">Submit</button>
-                                                </form>
+                                        <div id="btnsm1" class="carousel slide cr2" data-bs-ride="false">
+                                            <div class="carousel-indicators d-none">
+                                            <button type="button" data-bs-target="#btnsm1" data-bs-slide-to="0" > 
+                                            </button>
+                                            <button type="button" data-bs-target="#btnsm1" data-bs-slide-to="1" class="active"> 
+                                            </button>
+                                            <button type="button" data-bs-target="#btnsm1" data-bs-slide-to="2"> 
+                                            </button>
                                             </div>
-                                        </div>
-                                    </div>
+                                            <div class="carousel-inner px-5">
+                                            <div class="carousel-item active" data-bs-target="#btnsm1">
+                                                
+                                                <div class="btsm py-2">
+                                                    <button type="button" class="btnsm">Helpline</button>
+                                                    <button type="button" class="btnsm">Hospitals</button>
+                                                    <button type="button" class="btnsm">First Aid</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="carousel-item " data-bs-target="#demo">
+                                                
+                                                <div class="btsm py-2">
+                                                    
+                                                    <button type="button" class="btnsm">Dr Live</button>
+                                                    <button type="button" class="btnsm ">Snake Recognition</button>
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="carousel-item" data-bs-target="#btnsm1">
+                                                
+                                                <div class="btsm py-2">
+                                                    <button type="button" class="btnsm">Venom Details</button>
+                                                    <button type="button" class="btnsm">Snake Rescuers</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            
+                                            <button class="carousel-control-prev pe-lg-5" type="button" data-bs-target="#btnsm1" data-bs-slide="prev">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                                                  </svg>
+                                            </button>
+                                            
+                                            <button class="carousel-control-next ps-lg-5" type="button" data-bs-target="#btnsm1" data-bs-slide="next">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                                  </svg>
+                                            </button>
+                                            </div>
                         </div>
                     </div>
                     <div class="container">
@@ -231,16 +182,104 @@
                                     </div>
                                 </div>
                                 <div class="container pt-3">
-                                    <div class="qklinks px-3">
-                                                <div class="bts pb-2">
-                                                    <button type="button" class="btns">Publications</button>
-                                                    <button type="button" class="btns ">Taxonomy</button>
+                                    <div class="qklinks">
+                                        <div id="btns2" class="carousel slide cr1" data-bs-ride="false">
+                                            <div class="carousel-indicators d-none">
+                                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0"  class="active"> 
+                                            </button>
+                                            <button type="button" data-bs-target="#btnsm1" data-bs-slide-to="1"> 
+                                            </button>
+                                            
+                                            </div>
+                                            <div class="carousel-inner px-5">
+                                            <div class="carousel-item active" data-bs-target="#btns2">
+                                                <div class="bts py-2">
+                                                    <button type="button" class="btns"> Publications</button>
+                                                    <button type="button" class="btns">Taxonomy</button>
                                                     <button type="button" class="btns">Snake Parks</button>
                                                     <button type="button" class="btns">Sacred groves</button>
                                                     <button type="button" class="btns">Traditional thoughts</button>
-                                                    <button type="button" class="btns">Research & Development</button>
-                                                    <button type="button" class="btns">Resources</button>
+                                                
                                                 </div>
+                                        
+                                            </div>
+                                            <div class="carousel-item" data-bs-target="#btns2">
+                                                <div class="bts py-2">
+                                                    <button type="button" class="btns"> Research and Development</button>
+                                                    <button type="button" class="btns"> Resources</button>
+                                                </div>
+                                        
+                                            </div>
+                                            
+                                            
+                                            
+                                            
+                                            </div>
+                                            
+                                            <button class="carousel-control-prev pe-lg-5" type="button" data-bs-target="#btns2" data-bs-slide="prev">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                                                  </svg>
+                                            </button>
+                                            
+                                            <button class="carousel-control-next ps-lg-5" type="button" data-bs-target="#btns2" data-bs-slide="next">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                                  </svg>
+                                            </button>
+                                        </div>
+                                            <div id="btnsm2" class="carousel slide cr2" data-bs-ride="false">
+                                                <div class="carousel-indicators d-none">
+                                                <button type="button" data-bs-target="#btnsm2" data-bs-slide-to="0" class="active"> 
+                                                </button>
+                                                <button type="button" data-bs-target="#btnsm2" data-bs-slide-to="1" > 
+                                                </button>
+                                                <button type="button" data-bs-target="#btnsm2" data-bs-slide-to="2"> 
+                                                </button>
+                                                </div>
+                                                <div class="carousel-inner px-5">
+                                                <div class="carousel-item active" data-bs-target="#btnsm2">
+                                                    
+                                                    <div class="btsm py-2">
+                                                        <button type="button" class="btnsm"> Publications</button>
+                                                        <button type="button" class="btnsm">Taxonomy</button>
+                                                        <button type="button" class="btnsm">Snake Parks</button>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="carousel-item " data-bs-target="#btnsm2">
+                                                    
+                                                    <div class="btsm py-2">
+                                                        
+                                                        <button type="button" class="btnsm">Sacred groves</button>
+                                                        <button type="button" class="btnsm">Traditional thoughts</button>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="carousel-item" data-bs-target="#btnsm2">
+                                                    
+                                                    <div class="btsm py-2">
+                                                        <button type="button" class="btnsm"> Research and Development</button>
+                                                        <button type="button" class="btnsm"> Resources</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                
+                                                <button class="carousel-control-prev pe-lg-5" type="button" data-bs-target="#btnsm2" data-bs-slide="prev">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                                                      </svg>
+                                                </button>
+                                                
+                                                <button class="carousel-control-next ps-lg-5" type="button" data-bs-target="#btnsm2" data-bs-slide="next">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                                      </svg>
+                                                </button>
+                                                </div>
+                            </div>
+                        </div>
                                     </div>
                                 </div>
                                 <div id="chat-input">
